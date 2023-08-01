@@ -1,0 +1,7 @@
+node_modules
+
+.yarn
+.editorconfig
+.env
+/docker/docker.env
+.gitattributes
