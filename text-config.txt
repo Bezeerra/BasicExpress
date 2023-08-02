@@ -1,0 +1,32 @@
+yarn add -D tsc typescript ts-node
+
+yarn add -D nodemon  // reload the application
+"scripts": {
+    "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts"
+  },
+  
+  
+// configure your compile typescript
+npx tsc --init
+
+// formatação e sintax do código
+yarn add -D eslint prettier eslint-config-prettier
+npx eslint --init
+
+
+yarn add express
+yarn add -D @types/express types/node  
+
+yarn add -D dotenv
+
+// need configure eslint in 
+"parserOptions": {
+        "ecmaVersion": "latest",
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+    },
+
+// and package.json
+"scripts": {
+    "start:dev": "nodemon --watch 'src/' --exec 'ts-node src/index.ts' -e ts"
+},
